@@ -4,16 +4,18 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const button = e.target.querySelector("button");
 
-  const name = document.getElementById("name").value.toString();
+  // Get the selected mood (emoji value)
+  const mood = document.querySelector('input[name="mood"]:checked').value;
 
   button.setAttribute("disabled", true);
 
-  // Interact with foo actor, calling the greet method
-  const greeting = await icp_hello_world_motoko_backend.greet(name);
+  // Pass the selected mood to the backend instead of name
+  console.log('mood', mood)
+  const greeting = await icp_hello_world_motoko_backend.greet(mood);
 
   button.removeAttribute("disabled");
 
-  document.getElementById("greeting").innerText = greeting;
+  document.getElementById("spirit-sentence").innerText = greeting;
 
   return false;
 });

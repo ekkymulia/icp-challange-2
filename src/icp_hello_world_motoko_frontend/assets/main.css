@@ -35,3 +35,60 @@ button[type="submit"] {
 #greeting:empty {
     display: none;
 }
+
+/* General Styling */
+#feeling {
+    display: flex;
+    gap: 10px;
+}
+
+label {
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="radio"]:checked + label {
+    transform: scale(1.2); /* Enlarge the label when selected */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Label Styles */
+#happy + label {
+    background-color: #fff9c4; /* Soft Yellow */
+    padding: 5px 10px 5px 10px;
+    border-radius: 20%;
+}
+
+#sad + label {
+    background-color: #bbdefb; /* Soft Blue */
+    padding: 5px 10px 5px 10px;
+    border-radius: 20%;
+}
+
+#angry + label {
+    background-color: #ffccbc; /* Soft Coral */
+    padding: 5px 10px 5px 10px;
+    border-radius: 20%;
+}
+
+/* Button Styling */
+button {
+    background-color: #84d8a4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #72c39d;
+}
+
+button:active {
+    background-color: #5ab07d;
+    transform: scale(0.98);
+}

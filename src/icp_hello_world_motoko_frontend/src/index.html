@@ -3,22 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>icp_hello_world_rust_motoko</title>
+    <title>Keep up the Spirit!</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
     <link type="text/css" rel="stylesheet" href="main.css" />
   </head>
   <body>
     <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
+      <img src="moodbooster.jpeg" alt="Logo Mood Booster" />
       <br />
       <br />
+
       <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
+      <label for="feeling">Hey!! How do you feel right now?: &nbsp;</label>
+
+        <br>
+        <br />
+
+        <div id="feeling">
+          <input type="radio" id="happy" name="mood" value="😊" style="visibility: hidden;"/>
+          <label for="happy">😊</label>
+          
+          <input type="radio" id="sad" name="mood" value="😢" style="visibility: hidden;"/>
+          <label for="sad">😢</label>
+          
+          <input type="radio" id="angry" name="mood" value="😠" style="visibility: hidden;"/>
+            <label for="angry">😠</label>
+        </div>
+        <br>
+        <div>
+            <h4 id="spirit-sentence"></h4>
+            <button type="submit">Boost Me Up!</button>
+        </div>
+        <br>
+        <br />
+        <label for="feeling">Made by Members from Team Happy Liquidations ❤️</label>
+
+      
       </form>
-      <section id="greeting"></section>
+      <section id=""></section>
     </main>
   </body>
 </html>
